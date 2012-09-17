@@ -1,5 +1,5 @@
 {
-	"name":       "nick4fake/JsMin",
+	"name":       "nick4fake/jsmin",
 	"type":       "library",
 	"description":"Library for minifying JavaScript files",
 	"license":    "MIT",
