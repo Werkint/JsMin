@@ -1,0 +1,24 @@
+{
+	"name":       "nick4fake/JsMin",
+	"type":       "library",
+	"description":"Library for minifying JavaScript files",
+	"license":    "MIT",
+	"authors":    [
+		{
+			"name":    "Douglas Crockford",
+			"homepage":"www.crockford.com"
+		},
+		{
+			"name": "Bogdan Yurov",
+			"email":"bogdan@yurov.me"
+		}
+	],
+	"require":    {
+		"php":">=5.3"
+	},
+	"autoload":   {
+		"psr-0":{
+			"JsMin":""
+		}
+	}
+}
