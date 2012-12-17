@@ -5,7 +5,7 @@ namespace JsMin;
  * JSMin.php - modified PHP implementation of Douglas Crockford's JSMin.
  *
  * <code>
- * $minifiedJs = JSMin::minify($js);
+ * $minifiedJs = \JSMin\Minify::minify($js);
  * </code>
  *
  * This is a modified port of jsmin.c. Improvements:
