@@ -1,6 +1,7 @@
 <?php
 namespace JsMin\Exception;
 
-class UnterminatedRegExp extends \Exception {
+class UnterminatedRegExp extends \Exception
+{
 
 }
