@@ -2,57 +2,10 @@
 namespace JsMin;
 
 /**
- * JSMin.php - modified PHP implementation of Douglas Crockford's JSMin.
+ * Minify.
  *
- * <code>
- * $minifiedJs = \JSMin\Minify::minify($js);
- * </code>
- *
- * This is a modified port of jsmin.c. Improvements:
- *
- * Does not choke on some regexp literals containing quote characters. E.g. /'/
- *
- * Spaces are preserved after some add/sub operators, so they are not mistakenly
- * converted to post-inc/dec. E.g. a + ++b -> a+ ++b
- *
- * Preserves multi-line comments that begin with /*!
- *
- * PHP 5 or higher is required.
- *
- * Permission is hereby granted to use this version of the library under the
- * same terms as jsmin.c, which has the following license:
- *
- * --
- * Copyright (c) 2002 Douglas Crockford  (www.crockford.com)
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of
- * this software and associated documentation files (the "Software"), to deal in
- * the Software without restriction, including without limitation the rights to
- * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
- * of the Software, and to permit persons to whom the Software is furnished to do
- * so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * The Software shall be used for Good, not Evil.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- * --
- *
- * @package   JSMin
- * @author    Ryan Grove <ryan@wonko.com> (PHP port)
- * @author    Steve Clay <steve@mrclay.org> (modifications + cleanup)
- * @author    Andrea Giammarchi <http://www.3site.eu> (spaceBeforeRegExp)
  * @copyright 2002 Douglas Crockford <douglas@crockford.com> (jsmin.c)
  * @copyright 2008 Ryan Grove <ryan@wonko.com> (PHP port)
- * @license   http://opensource.org/licenses/mit-license.php MIT License
  * @link      http://code.google.com/p/jsmin-php/
  */
 class Minify
